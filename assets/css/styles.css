@@ -500,3 +500,99 @@ img {
 .work {
   padding-top: 3rem; /* Reduce top padding */
 }
+/* ===== RESUME SECTION ===== */
+.resume.section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.resume-description {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.resume-buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.resume-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive layout */
+@media screen and (min-width: 600px) {
+  .resume-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 10rem 2rem 5rem; /* add enough top space */
+  }
+
+  .home__img {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    width: 400px;
+  }
+
+  .home__blob {
+    width: 100%;
+  }
+
+  .home__blob-img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 1rem 3rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .home__img {
+    position: static !important;
+    width: 240px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .home__blob {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .home__blob-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
